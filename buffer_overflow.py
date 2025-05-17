@@ -10,7 +10,8 @@
   - Автоматизированное тестирование с использованием unittest.
 
 Для запуска тестов выполните:
-    python этот_файл.py test
+    python этот_файл.py unitest
+    python этот_файл.py perfomancetest
 Без аргументов запускается основное приложение.
 
 """
@@ -282,7 +283,7 @@ if __name__ == '__main__':
             PerformanceTester.run_performance_test(num_requests)
         else:
             print("Использование:")
-            print("  python этот_файл.py test           - запуск unit-тестов")
+            print("  python этот_файл.py unitest           - запуск unit-тестов")
             print("  python этот_файл.py performancetest - запуск теста производительности")
             print("  python этот_файл.py                - запуск основного приложения")
     else:
