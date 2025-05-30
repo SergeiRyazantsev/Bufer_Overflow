@@ -10,7 +10,7 @@
   - Автоматизированное тестирование с использованием unittest.
 
 Для запуска тестов выполните:
-    python этот_файл.py unitest
+    python этот_файл.py unittest
     python этот_файл.py perfomancetest
 Без аргументов запускается основное приложение.
 
@@ -265,7 +265,7 @@ class PerformanceTester:
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        if sys.argv[1] == "unitest":
+        if sys.argv[1] == "unittest":
             sys.argv.pop(1)
             unittest.main()
         elif sys.argv[1] == "performancetest":
@@ -283,7 +283,7 @@ if __name__ == '__main__':
             PerformanceTester.run_performance_test(num_requests)
         else:
             print("Использование:")
-            print("  python этот_файл.py unitest           - запуск unit-тестов")
+            print("  python этот_файл.py unittest           - запуск unit-тестов")
             print("  python этот_файл.py performancetest - запуск теста производительности")
             print("  python этот_файл.py                - запуск основного приложения")
     else:
